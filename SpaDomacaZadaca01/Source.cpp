@@ -9,8 +9,8 @@
 #include <sstream>
 #include <string>
 
-#include "object.hpp"
-#include "renderer.hpp"
+#include "src/object.hpp"
+#include "src/renderer.hpp"
 #include "src/flower.hpp"
 
 constexpr size_t WINDOW_WIDTH = 800;
