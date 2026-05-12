@@ -33,7 +33,7 @@ Vec3D Vec3D::operator*(const float scalar) const {
 }
 
 void Vec3D::normalize() {
-	float length = std::sqrtf(x*x + y*y + z*z);
+	float length = std::sqrt(x*x + y*y + z*z);
 
 	x /= length;
 	y /= length;
