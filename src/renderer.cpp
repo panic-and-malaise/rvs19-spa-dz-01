@@ -18,7 +18,7 @@ Renderer::Renderer() : camera({ 0.0f, 0.0f, -5.0f }) {}
 
 Mat4 Renderer::create_screen_projection_matrix(const float screen_width, const float screen_height) {
 	// Curse you, STL devs, and your tangent function not being inline...
-	const float FOV_SCALING_FACTOR = 1.0f / std::tanf(radians(FOV / 2.0f));
+	const float FOV_SCALING_FACTOR = 1.0f / std::tan(radians(FOV / 2.0f));
 
 	return Mat4{{
 		{ (screen_width / screen_height) * FOV_SCALING_FACTOR, 0.0f, 0.0f, 0.0f },
